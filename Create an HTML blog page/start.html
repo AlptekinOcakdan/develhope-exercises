@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Blog Page</title>
+    <style>
+
+        .article {
+            background-image: url('assets/laptop.png');
+            opacity: 0.8;
+            background-size: cover;
+            background-position: center;
+            width: 400px;
+            height: 266px;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+
+        form {
+            margin-top: 20px;
+            width: 420px;
+            display: flex;
+            flex-direction: column;
+        }
+        input ,textarea{
+            padding: 5px;
+            margin: 10px;
+        }
+        label{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>My Blog Page</h1>
+</header>
+
+<main>
+    <div class="overlay">
+        <article class="article">
+            <h2>Article Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat ipsum eget nisi condimentum, at
+                commodo metus venenatis. Sed ut sapien vel ex euismod vestibulum eu sit amet velit. Pellentesque
+                blandit,
+                nunc vel ullamcorper blandit, sapien lectus placerat nibh, a interdum enim tellus non lectus.</p>
+        </article>
+    </div>
+
+    <form action="/submit-form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2023 My Blog Page. All rights reserved.</p>
+</footer>
+</body>
+</html>
