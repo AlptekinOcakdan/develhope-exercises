@@ -1,0 +1,27 @@
+article{
+    width: 500px;
+}
+
+img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.innerCard {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+p,
+.row {
+    padding: 0 20px 20px 20px;
+    border-bottom: 1px solid black;
+}
+
+h4 {
+    padding: 0 20px;
+}
+
+.row a {
+    margin-right: 10px;
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Navigation Bar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <nav>
+    <div class="links">
+      <ul>
+        <li><a style="font-size: 25px; !important;" href="#">Navbar</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Link</a></li>
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <li><a style="color:gray; pointer-events: none; cursor: default;" href="#">Disabled</a></li>
+      </ul>
+    </div>
+    <div class="search">
+      <input class="searchInput" type="text" id="search" placeholder="Search">
+      <input class="btn success" type="submit" value="Search">
+    </div>
+    <div class="hamburger">
+      <img src="hamburger.png" alt="menu">
+    </div>
+  </nav>
+</main>
+</body>
+</html>

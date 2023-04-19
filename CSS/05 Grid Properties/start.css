@@ -1,0 +1,32 @@
+#green {
+    grid-area: green;
+}
+
+#yellow {
+    grid-area: yellow;
+}
+
+#orange {
+    grid-area: orange;
+}
+
+#red {
+    grid-area: red;
+}
+
+#blue {
+    grid-area: blue;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+'green green green green green green'
+'yellow yellow red red blue blue'
+'orange orange orange orange blue blue';
+}
+
+ul {
+    display: grid;
+    grid-template-columns: auto auto;
+}
