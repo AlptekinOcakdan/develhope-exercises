@@ -21,9 +21,13 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
     .image {
         flex: 100%;
         max-width: 100%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
     }
 }
