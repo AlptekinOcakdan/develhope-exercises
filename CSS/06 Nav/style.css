@@ -109,7 +109,7 @@ a {
     .hamburger{
         display: block;
     }
-    .links, .search{
+    .list-item, .dropdown, .search{
         display: none;
     }
 }
