@@ -36,12 +36,12 @@ section {
 
 #first {
   article {
-    @include articleStyle($blueColor,$redColor,$greenColor,16px)
+    @include articleStyle($blueColor,$redColor,$greenColor,1rem)
   }
 }
 #second {
   article {
-    @include articleStyle($greenColor,$redColor,$blueColor,25px)
+    @include articleStyle($greenColor,$redColor,$blueColor,24px)
   }
 }
 
