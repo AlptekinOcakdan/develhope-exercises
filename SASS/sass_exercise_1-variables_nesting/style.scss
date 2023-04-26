@@ -1,0 +1,39 @@
+$redColor: red;
+$greenColor:green;
+$blueColor:blue;
+@mixin flexBody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div{
+  border: 1px solid $redColor;
+  @include flexBody;
+  flex-direction: column;
+}
+
+section{
+  @include flexBody;
+  flex-direction: row;
+  padding:0 20px 20px 20px;
+}
+article{
+  border: 1px solid $greenColor;
+}
+p{
+  padding: 20px;
+  text-align: center;
+}
+h1{
+  color: $greenColor;
+  border-bottom: 1px solid $greenColor;
+}
+article{
+  &:nth-child(odd){
+    color: $blueColor;
+  }
+  &:nth-child(even){
+    color: $redColor;
+  }
+}
