@@ -24,8 +24,8 @@
 }
 
 %text {
-  color: $greenColor;
-  border-bottom: 1px solid $greenColor;
+  color: variables.$greenColor;
+  border-bottom: 1px solid variables.$greenColor;
 }
 
 h1 {
@@ -35,11 +35,11 @@ h1 {
 h2 {
   @extend %text;
   padding: 1rem;
-  border: 1px solid $redColor;
+  border: 1px solid variables.$redColor;
 }
 
 div {
-  @include borderStyle($redColor);
+  @include borderStyle(variables.$redColor);
   @include flexBody;
   flex-direction: column;
 }
@@ -52,13 +52,13 @@ section {
 
 #first {
   article {
-    @include articleStyle($blueColor, $redColor, $greenColor, 1rem);
+    @include articleStyle(variables.$blueColor, variables.$redColor, variables.$greenColor, 1rem);
   }
 }
 
 #second {
   article {
-    @include articleStyle($greenColor, $redColor, $blueColor, 24px);
+    @include articleStyle(variables.$greenColor, variables.$redColor, variables.$blueColor, 24px);
   }
 }
 

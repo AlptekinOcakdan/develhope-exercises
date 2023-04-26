@@ -1,0 +1,54 @@
+h2, h1 {
+  color: green;
+  border-bottom: 1px solid green;
+}
+
+h2 {
+  padding: 1rem;
+  border: 1px solid red;
+}
+
+div {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 20px 20px 20px;
+}
+
+#first article {
+  border: 1px solid green;
+  font-size: 0.0625remrem;
+}
+#first article:nth-child(odd) {
+  color: blue;
+}
+#first article:nth-child(even) {
+  color: red;
+}
+
+#second article {
+  border: 1px solid blue;
+  font-size: 1.5pxrem;
+}
+#second article:nth-child(odd) {
+  color: green;
+}
+#second article:nth-child(even) {
+  color: red;
+}
+
+p {
+  padding: 20px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
