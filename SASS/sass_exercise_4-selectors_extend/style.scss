@@ -13,7 +13,7 @@
 
 @mixin articleStyle($firstColor, $secondColor, $borderColor, $fontSize) {
   @include borderStyle($borderColor);
-  font-size: f.rem($fontSize);
+  font-size: $fontSize;
   &:nth-child(odd) {
     color: $firstColor;
   }

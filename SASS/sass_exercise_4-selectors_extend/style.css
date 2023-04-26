@@ -26,7 +26,7 @@ section {
 
 #first article {
   border: 1px solid green;
-  font-size: 0.0625remrem;
+  font-size: 1rem;
 }
 #first article:nth-child(odd) {
   color: blue;
@@ -37,7 +37,7 @@ section {
 
 #second article {
   border: 1px solid blue;
-  font-size: 1.5pxrem;
+  font-size: 24px;
 }
 #second article:nth-child(odd) {
   color: green;
