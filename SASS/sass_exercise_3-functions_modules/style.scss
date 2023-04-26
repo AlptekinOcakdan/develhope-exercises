@@ -1,0 +1,57 @@
+@use "variables";
+@use "functions" as f;
+
+@mixin flexBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin borderStyle($color){
+  border: 1px solid $color;
+}
+
+@mixin articleStyle($firstColor,$secondColor,$borderColor,$fontSize){
+  @include borderStyle($borderColor);
+  font-size: $fontSize;
+  &:nth-child(odd) {
+    color: $firstColor;
+  }
+
+  &:nth-child(even) {
+    color: $secondColor;
+  }
+}
+
+div {
+  @include borderStyle(variables.$redColor);
+  @include flexBody;
+  flex-direction: column;
+}
+
+section {
+  @include flexBody;
+  flex-direction: row;
+  padding: 0 f.rem(20) f.rem(20) f.rem(20);
+}
+
+#first {
+  article {
+    @include articleStyle(variables.$blueColor,variables.$redColor,variables.$greenColor,f.rem(16));
+  }
+}
+#second {
+  article {
+    @include articleStyle(variables.$greenColor,variables.$redColor,variables.$blueColor,f.rem(24));
+  }
+}
+
+p {
+  padding: f.rem(20);
+  text-align: center;
+}
+
+h1 {
+  color: variables.$greenColor;
+  border-bottom: 1px solid variables.$greenColor;
+}
