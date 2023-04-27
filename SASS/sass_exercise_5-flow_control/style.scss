@@ -1,0 +1,155 @@
+@use "variables";
+@use "functions" as f;
+
+@mixin flexBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin borderStyle($color) {
+  border: 1px solid $color;
+}
+
+@mixin articleStyle($firstColor, $secondColor, $borderColor, $fontSize) {
+  @include borderStyle($borderColor);
+  font-size: $fontSize;
+  &:nth-child(odd) {
+    color: $firstColor;
+  }
+
+  &:nth-child(even) {
+    color: $secondColor;
+  }
+}
+
+%text {
+  color: variables.$greenColor;
+  border-bottom: 1px solid variables.$greenColor;
+}
+
+h1 {
+  @extend %text;
+}
+
+h2 {
+  @extend %text;
+  padding: 1rem;
+  border: 1px solid variables.$redColor;
+}
+
+div {
+  @include borderStyle(variables.$redColor);
+  @include flexBody;
+  flex-direction: column;
+}
+
+section {
+  @include flexBody;
+  flex-direction: row;
+  padding: 0 20px 20px 20px;
+}
+
+#first {
+  article {
+    @include articleStyle(variables.$blueColor, variables.$redColor, variables.$greenColor, 1rem);
+  }
+}
+
+#second {
+  article {
+    @include articleStyle(variables.$greenColor, variables.$redColor, variables.$blueColor, 24px);
+  }
+}
+
+p {
+  padding: 20px;
+  text-align: center;
+}
+//.container {
+//  display: flex;
+//  justify-content: flex-start;
+//  align-items: flex-start;
+//
+//  $colors: (
+//          1: #080808,
+//          2: #1d1d1d,
+//          3: #323232,
+//          4: #474747,
+//          5: #5c5c5c,
+//          6: #717171,
+//          7: #868686,
+//          8: #9b9b9b,
+//          9: #b0b0b0,
+//          10: red,
+//          11: #c6c6c6,
+//          12: #dbdbdb,
+//          13: #f0f0f0,
+//          14: #f5f5f5,
+//          15: #fafafa,
+//          16: #ffffff,
+//          17: #ffffff,
+//          18: #ffffff,
+//          19: #ffffff
+//  );
+//
+//  .box {
+//    display: flex;
+//    justify-content: flex-start;
+//    align-items: flex-start;
+//    width: 45px;
+//    height: 45px;
+//    margin-right: 10px;
+//    margin-left: 10px;
+//
+//    @each $i, $color in $colors {
+//      &:nth-child(#{$i}) {
+//        color: $color;
+//        background-color: rgba(255, 255,255 , ($i - 20) * 5%);
+//      }
+//    }
+//  }
+//}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    margin-left: 10px;
+    $a:255;
+    @for $i from 1 through 19 {
+      &:nth-child(#{$i}) {
+        $r:$i*13;
+        @if $i == 10 {
+          color: red;
+          background-color: blue;
+        } @else {
+          color: rgb($r,$r,$r);
+          $a:$a - 13;
+          background-color: rgb($a,$a,$a);
+        }
+      }
+    }
+  }
+}
+
+.fs-1rem {
+  font-size: 1rem;
+}
+
+.fs-2rem {
+  font-size: 2rem;
+}
+
+.fs-3rem {
+  font-size: 3rem;
+}
+

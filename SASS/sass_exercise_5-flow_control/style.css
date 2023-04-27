@@ -1,0 +1,157 @@
+h2, h1 {
+  color: green;
+  border-bottom: 1px solid green;
+}
+
+h2 {
+  padding: 1rem;
+  border: 1px solid red;
+}
+
+div {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 20px 20px 20px;
+}
+
+#first article {
+  border: 1px solid green;
+  font-size: 1rem;
+}
+#first article:nth-child(odd) {
+  color: blue;
+}
+#first article:nth-child(even) {
+  color: red;
+}
+
+#second article {
+  border: 1px solid blue;
+  font-size: 24px;
+}
+#second article:nth-child(odd) {
+  color: green;
+}
+#second article:nth-child(even) {
+  color: red;
+}
+
+p {
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.container .box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.container .box:nth-child(1) {
+  color: rgb(13, 13, 13);
+  background-color: rgb(242, 242, 242);
+}
+.container .box:nth-child(2) {
+  color: rgb(26, 26, 26);
+  background-color: rgb(229, 229, 229);
+}
+.container .box:nth-child(3) {
+  color: rgb(39, 39, 39);
+  background-color: rgb(216, 216, 216);
+}
+.container .box:nth-child(4) {
+  color: rgb(52, 52, 52);
+  background-color: rgb(203, 203, 203);
+}
+.container .box:nth-child(5) {
+  color: rgb(65, 65, 65);
+  background-color: rgb(190, 190, 190);
+}
+.container .box:nth-child(6) {
+  color: rgb(78, 78, 78);
+  background-color: rgb(177, 177, 177);
+}
+.container .box:nth-child(7) {
+  color: rgb(91, 91, 91);
+  background-color: rgb(164, 164, 164);
+}
+.container .box:nth-child(8) {
+  color: rgb(104, 104, 104);
+  background-color: rgb(151, 151, 151);
+}
+.container .box:nth-child(9) {
+  color: rgb(117, 117, 117);
+  background-color: rgb(138, 138, 138);
+}
+.container .box:nth-child(10) {
+  color: red;
+  background-color: blue;
+}
+.container .box:nth-child(11) {
+  color: rgb(143, 143, 143);
+  background-color: rgb(125, 125, 125);
+}
+.container .box:nth-child(12) {
+  color: rgb(156, 156, 156);
+  background-color: rgb(112, 112, 112);
+}
+.container .box:nth-child(13) {
+  color: rgb(169, 169, 169);
+  background-color: rgb(99, 99, 99);
+}
+.container .box:nth-child(14) {
+  color: rgb(182, 182, 182);
+  background-color: rgb(86, 86, 86);
+}
+.container .box:nth-child(15) {
+  color: rgb(195, 195, 195);
+  background-color: rgb(73, 73, 73);
+}
+.container .box:nth-child(16) {
+  color: rgb(208, 208, 208);
+  background-color: rgb(60, 60, 60);
+}
+.container .box:nth-child(17) {
+  color: rgb(221, 221, 221);
+  background-color: rgb(47, 47, 47);
+}
+.container .box:nth-child(18) {
+  color: rgb(234, 234, 234);
+  background-color: rgb(34, 34, 34);
+}
+.container .box:nth-child(19) {
+  color: rgb(247, 247, 247);
+  background-color: rgb(21, 21, 21);
+}
+
+.fs-1rem {
+  font-size: 1rem;
+}
+
+.fs-2rem {
+  font-size: 2rem;
+}
+
+.fs-3rem {
+  font-size: 3rem;
+}
+
+/*# sourceMappingURL=style.css.map */
