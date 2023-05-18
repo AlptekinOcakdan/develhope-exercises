@@ -9,7 +9,6 @@ function repeatHello(callback) {
     }, 5000);
 }
 
-// Example usage:
 const printHello = () => {
     console.log("Hello");
 };

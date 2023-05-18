@@ -15,7 +15,7 @@ const userPromise = (number) => {
         if (number > 0.5) {
             resolve({ name: "John", age: 24 });
         } else {
-            reject(new Error("Number is not greater than 0.5."));
+            reject(new Error("Number is lower than 0.5."));
         }
     });
 };

@@ -12,4 +12,4 @@ const filteredPerson = {
 
 const json = JSON.stringify(filteredPerson);
 
-console.log(json); // Output: {"id":1,"age":25}
+console.log(json);

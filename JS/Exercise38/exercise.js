@@ -1,7 +1,5 @@
 const isLogged = true;
 
-const isLogged = true;
-
 const randomNumberPromise = new Promise((resolve, reject) => {
     if (isLogged) {
         const randomNumber = Math.random();
@@ -16,7 +14,7 @@ const userPromise = (number) => {
         if (number > 0.5) {
             resolve({ name: "John", age: 24 });
         } else {
-            reject("Number is not greater than 0.5.");
+            reject("Number is lower than 0.5.");
         }
     });
 };

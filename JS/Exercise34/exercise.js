@@ -14,7 +14,6 @@ function printAsyncName(callback, name) {
     }, delay);
 }
 
-// Example usage:
 function greeting() {
     console.log("Hello");
 }
