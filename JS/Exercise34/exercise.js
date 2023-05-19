@@ -1,21 +1,20 @@
-
 function printAsyncName(callback, name) {
     const delay = 1000;
-    let count = 0;
+    let executed = false;
 
     const intervalId = setInterval(() => {
-        if (count === 0) {
+        if (!executed) {
             callback();
-        } else if (count === 2) {
+            executed = true;
+        } else {
             console.log(name);
             clearInterval(intervalId);
         }
-        count++;
     }, delay);
 }
 
-function greeting() {
+function greetingCallback() {
     console.log("Hello");
 }
 
-printAsyncName(greeting, "Alptekin");
+printAsyncName(greetingCallback, "Alptekin");

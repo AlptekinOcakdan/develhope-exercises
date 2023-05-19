@@ -1,4 +1,3 @@
-
 function repeatHello(callback) {
     const intervalId = setInterval(() => {
         callback();

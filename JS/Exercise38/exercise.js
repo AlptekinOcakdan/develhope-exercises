@@ -12,18 +12,15 @@ const randomNumberPromise = new Promise((resolve, reject) => {
 const userPromise = (number) => {
     return new Promise((resolve, reject) => {
         if (number > 0.5) {
-            resolve({ name: "John", age: 24 });
+            resolve({name: "Alptekin", age: 24});
         } else {
             reject("Number is lower than 0.5.");
         }
     });
 };
 
-randomNumberPromise
-    .then((number) => userPromise(number))
-    .then((data) => {
-        console.log(data);
-    })
-    .catch((error) => {
-        console.log(error);
-    });
+randomNumberPromise.then((number) => userPromise(number)).then((data) => {
+    console.log(data);
+}).catch((error) => {
+    console.log(error);
+});
