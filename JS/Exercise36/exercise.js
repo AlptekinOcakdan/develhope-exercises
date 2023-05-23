@@ -1,11 +1,12 @@
 function repeatHello(callback) {
+    let callbackCount = 0;
     const intervalId = setInterval(() => {
         callback();
+        callbackCount++;
+        if (callbackCount >= 5) {
+            clearInterval(intervalId);
+        }
     }, 1000);
-
-    setTimeout(() => {
-        clearInterval(intervalId);
-    }, 5000);
 }
 
 const printHello = () => {
@@ -13,3 +14,5 @@ const printHello = () => {
 };
 
 repeatHello(printHello);
+
+
