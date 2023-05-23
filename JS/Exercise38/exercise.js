@@ -18,8 +18,15 @@ const userPromise = (number) => {
         }
     });
 };
-
+/*
 randomNumberPromise.then((number) => userPromise(number)).then((data) => {
+    console.log(data);
+}).catch((error) => {
+    console.log(error);
+});
+*/
+// When you pass a function as a handler to the then() method of a Promise, the return value of that function is automatically wrapped in a new Promise.
+randomNumberPromise.then(userPromise).then((data) => {
     console.log(data);
 }).catch((error) => {
     console.log(error);
