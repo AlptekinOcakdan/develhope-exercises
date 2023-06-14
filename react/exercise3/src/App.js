@@ -1,7 +1,7 @@
 import Welcome from "./Welcome";
 
 function App() {
-    return <Welcome name="John" age={30} />;
+    return <Welcome name="Alptekin" age={23} />;
 }
 
 export default App;
