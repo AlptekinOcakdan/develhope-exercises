@@ -5,7 +5,6 @@ function CounterDisplay({ count }) {
 }
 
 class Counter extends Component {
-    // In this updated version, the constructor is still required to initialize the state and handle the initial value of the counter.
     constructor(props) {
         super(props);
         this.state = {
@@ -28,6 +27,6 @@ class Counter extends Component {
     render() {
         return <CounterDisplay count={this.state.count} />;
     }
-}}
+}
 
 export default Counter;
