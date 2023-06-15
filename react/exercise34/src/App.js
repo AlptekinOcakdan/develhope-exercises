@@ -5,7 +5,7 @@ function App() {
         <div>
             <div>
                 <h1>Github User Data</h1>
-                <GithubUser username="your-github-username" />
+                <GithubUser username="AlptekinOcakdan" />
             </div>
         </div>
     );
