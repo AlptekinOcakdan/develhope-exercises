@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import ShowGithubUser from './ShowGithubUser';
 import Counter from './Counter';
 import Home from './Home';
-// I intentionally didn't add the components mentioned on code.
 const App = () => {
     return (
         <Router>

@@ -4,7 +4,6 @@ import ShowGithubUser from './ShowGithubUser';
 import Counter from './Counter';
 import Home from './Home';
 import NotFound from './NotFound';
-// I intentionally didn't add the components mentioned on code.
 
 const App = () => {
     return (
