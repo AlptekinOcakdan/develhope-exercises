@@ -1,4 +1,4 @@
-import React from 'react';
+
 import useGithubUser from './useGithubUser';
 
 const GithubUser = ({ username }) => {
