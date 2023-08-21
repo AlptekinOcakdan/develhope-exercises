@@ -3,7 +3,7 @@
  */
 
 class Currency {
-    private name: string;
+    protected name: string;
     private code: string;
     private symbol: string;
 
