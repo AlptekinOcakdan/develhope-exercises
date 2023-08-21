@@ -5,13 +5,15 @@ const asyncErrors = require('express-async-errors');
 const planetRouter = require('./router');
 const setupDb = require('./setupDb');
 
+const userRoutes= require('./userRoutes');
+
 // setupDb();
 
 dotenv.config();
 
 const app = express();
 
-app.use('/users', planetRouter); //
+app.use('/users', userRoutes); //
 
 app.use(express.json());
 
